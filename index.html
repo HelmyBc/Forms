@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Example Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+    <div class="simpleinput">
+    <label id="name-label"  for="name">Name</label>
+    <input id="name" type="text" placeholder="Enter your name" required><br>
+    <label id="name-label" for="email">Email</label>
+    <input id="email" type="email" placeholder="Enter your Email" required><br>
+    <label id="number-label" for="number">Age (optional)</label>
+    <input id="number" type="number" placeholder="Enter your age" min="16" max="99" required><br>
+    <label id="name-label"  for="dropdown">What is your profession</label>
+    <select id="dropdown" type="text"  required><br>
+        <option>option1</option>
+        <option>option2</option>
+        <option>option3</option>
+        <option>option4</option>
+    </select><br><br></div>
+    <div class="radiodiv">
+        <p> Do you like this survey form?</p>
+        <input class="ri" id="Definitely" type="radio" name="answer" >
+        <label class="labelc" for="Definitely">Definitely</label><br>
+        <input class="ri" id="maybe" type="radio" name="answer" >
+        <label class="labelc" for="maybe">Maybe</label><br>
+        <input class="ri" id="notsure" type="radio" name="answer" >
+        <label class="labelc" for="notsure">Not sure</label><br>
+    </div>
+    <div class="checkdiv">
+        <p> What would you like to see improved? (Check all that apply)</p>
+        <input class="ci" id="fe" type="checkbox" name="answer" >
+        <label class="labelc" for="fe">Front-end projects</label><br>
+        <input class="ci" id="be" type="checkbox" name="answer" >
+        <label class="labelc" for="fe">Back-end projects</label><br>
+        <input class="ci" id="dv" type="checkbox" name="answer" >
+        <label class="labelc" for="fe">Data visualization</label><br>
+      
+        
+    </div>
+    <button id="submit"> Submit</button>
+</form>
+</body>
+</html>
