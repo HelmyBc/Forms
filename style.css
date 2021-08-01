@@ -75,6 +75,10 @@ form input:focus {
   font-size: 16px;
   margin-top: 2rem;
   border-radius: 1rem;
+  cursor: pointer;
+}
+#submit:hover{
+    transform: scale(1.05);
 }
 @keyframes bgcolor {
   0% {
